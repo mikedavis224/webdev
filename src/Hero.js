@@ -2,9 +2,9 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex flex-col lg:flex-row items-center bg-[#016162]">
+    <div className="relative h-screen flex items-center bg-[#016162]">
       {/* Left Column - Background Video */}
-      <div className="w-full lg:w-1/2 h-1/2 lg:h-full relative">
+      <div className="w-1/2 h-full relative">
         {/* Background Video */}
         <video
           autoPlay
@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       {/* Right Column - Content */}
-      <div className="w-full lg:w-1/2 h-1/2 lg:h-full flex flex-col justify-center items-start px-8 lg:px-16 py-6 relative">
+      <div className="w-1/2 h-full relative flex flex-col justify-center items-start px-8">
         {/* Dark Filter for Text Background */}
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70 z-0"></div>
 
@@ -32,16 +32,16 @@ const Hero = () => {
           <img
             src="/nugo-hero.png"
             alt="Nugo Logo"
-            className="w-36 lg:w-48 h-auto mb-4"
+            className="w-48 lg:w-64 h-auto mb-6"
           />
 
           {/* Headline */}
-          <h1 className="text-3xl lg:text-5xl font-bold text-white mb-4 lg:mb-6">
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
             Empowering Your Business with Cutting-Edge Cloud Solutions
           </h1>
 
           {/* Subtext */}
-          <p className="text-sm lg:text-lg text-gray-300 mb-4 lg:mb-6 max-w-lg text-justify">
+          <p className="text-lg text-gray-300 mb-6 max-w-lg text-justify">
             Welcome to <span className="font-bold text-white">Nugo Tech</span>,
             your trusted partner for cloud application development, captivating
             homepage designs, and reliable web hosting services. We specialize
@@ -61,17 +61,15 @@ const Hero = () => {
           </p>
 
           {/* Call-to-Action Button */}
-          <div className="text-center lg:text-left">
-            <a
-              href="#contact"
-              className="bg-[#CC3333] text-white py-2 px-4 lg:px-6 rounded-lg hover:bg-red-700 transition-all"
-              aria-label="Get Started Now"
-            >
-              Get Started Now
-            </a>
-          </div>
+          <a
+            href="#contact"
+            className="bg-[#CC3333] text-white py-2 px-6 rounded-lg hover:bg-red-700 transition-all"
+            aria-label="Get Started Now"
+          >
+            Get Started Now
+          </a>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
